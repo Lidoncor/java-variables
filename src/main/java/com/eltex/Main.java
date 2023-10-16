@@ -20,6 +20,11 @@ public class Main {
             totalDiscount = 0;
         }
 
-        System.out.printf("За прошлый год вы бы сэкономили с подпиской %s ₽", totalDiscount);
+        if (totalDiscount == 0) {
+            System.out.print("Попробуйте нашу новую подписку и сэкономьте 2%");
+        } else {
+            System.out.printf("За прошлый год вы бы сэкономили с подпиской %s ₽", totalDiscount);
+        }
+
     }
 }
